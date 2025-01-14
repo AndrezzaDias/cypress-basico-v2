@@ -1,29 +1,69 @@
-# Testes automatizados com Cypress - Básico
+# Projeto de Testes Automatizados
 
-👋 Seja bem-vindo(a)!
+Este projeto foi desenvolvido como parte do curso de testes automatizados, com o objetivo de validar funcionalidades da aplicação de maneira confiável e eficiente.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+## 📖 Descrição
 
-## O que você vai aprender
+O projeto contém testes automatizados para garantir a qualidade e o funcionamento correto da aplicação, utilizando ferramentas modernas de automação.
 
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+## ⚙️ Pré-requisitos
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
+Antes de começar, certifique-se de ter os seguintes itens instalados em sua máquina:
 
-## Vamos começar?
+- [Node.js](https://nodejs.org/) (versão 14 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- [git](https://git-scm.com/)
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+## 🚀 Instalação
 
-___
+Siga os passos abaixo para configurar o projeto:
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/usuario/nome-do-repositorio.git
+   ```
+
+2. Acesse o diretório do projeto:
+   ```bash
+   cd nome-do-repositorio
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+   ou, se estiver utilizando yarn:
+   ```bash
+   yarn install
+   ```
+
+## ✅ Como Executar os Testes
+
+Execute os seguintes comandos para rodar os testes:
+
+- Para executar os testes no terminal:
+  ```bash
+  npm test
+  ```
+  ou, com yarn:
+  ```bash
+  yarn test
+  ```
+
+- Para abrir a interface gráfica do Cypress:
+  ```bash
+  npx cypress open
+  ```
+
+- Para executar os testes no modo headless:
+  ```bash
+  npx cypress run
+  ```
+
+## 📝 Informações Adicionais
+
+- Certifique-se de configurar variáveis de ambiente, caso necessário.
+- Consulte o arquivo `cypress.config.js` (ou equivalente) para verificar as configurações do projeto.
+- Para mais informações sobre o Cypress, consulte a [documentação oficial](https://docs.cypress.io/).
+
+---
