@@ -1,12 +1,30 @@
-name: End-to-end tests 🧪
-on: [push]
+name: End-to-end tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
+
     steps:
+      # Passo 1: Fazer checkout do repositório
       - name: Checkout
-        uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
+        uses: actions/checkout@v3
+
+      # Passo 2: Configurar o Node.js para instalar dependências
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Passo 3: Instalar as dependências do projeto
+      - name: Install dependencies
+        run: npm ci
+
+      # Passo 4: Rodar os testes do Cypress
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v5
