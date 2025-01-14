@@ -28,3 +28,8 @@ jobs:
       # Passo 4: Rodar os testes do Cypress
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        with:
+          command: npm run test:cloud
+    
